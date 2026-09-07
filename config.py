@@ -30,7 +30,7 @@ if not ENV_FILE.exists():
 load_dotenv(ENV_FILE, override=True)
 
 EXCEL_PATH = Path(os.getenv("EXCEL_PATH", BASE_DIR / "data" / "participants.xlsx"))
-PPTX_TEMPLATE_PATH = Path(os.getenv("PPTX_TEMPLATE_PATH", BASE_DIR / "data" / "certificate_template.pptx"))
+PPTX_TEMPLATE_PATH = Path(os.getenv("PPTX_TEMPLATE_PATH", BASE_DIR / "Template" / "certificate_template.pptx"))
 
 EMAIL_WITH_TIME_TXT = Path(os.getenv("EMAIL_WITH_TIME_TXT", BASE_DIR / "data" / "email_with_time.txt"))
 EMAIL_WITHOUT_TIME_TXT = Path(os.getenv("EMAIL_WITHOUT_TIME_TXT", BASE_DIR / "data" / "email_without_time.txt"))
